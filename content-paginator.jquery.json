@@ -1,0 +1,27 @@
+{
+  "name": "content-paginator",
+  "title": "Content Paginator",
+  "description": "A jquery plugin can paginate the large content, increase the reading experience.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/nicolaszhao/content-paginator",
+  "author": {
+    "name": "Nicolas Zhao",
+    "email": "nicolas-zhao@live.com",
+    "url": "https://github.com/nicolaszhao"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nicolaszhao/content-paginator.git"
+  },
+  "bugs": "https://github.com/nicolaszhao/content-paginator/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/nicolaszhao/content-paginator/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "v1.10.2"
+  },
+  "keywords": []
+}
