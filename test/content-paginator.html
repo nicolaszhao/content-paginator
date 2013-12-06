@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Content Paginator Test Suite</title>
-  <!-- Load local jQuery. This can be overridden with a ?jquery=___ param. -->
-  <script src="../libs/jquery-loader.js"></script>
-  <!-- Load local QUnit. -->
-  <link rel="stylesheet" href="../libs/qunit/qunit.css" media="screen">
-  <script src="../libs/qunit/qunit.js"></script>
-  <!-- Load local lib and tests. -->
-  <script src="../src/content-paginator.js"></script>
-  <script src="content-paginator_test.js"></script>
-  <!-- Removing access to jQuery and $. But it'll still be available as _$, if
-       you REALLY want to mess around with jQuery in the console. REMEMBER WE
-       ARE TESTING A PLUGIN HERE, THIS HELPS ENSURE BEST PRACTICES. REALLY. -->
-  <script>window._$ = jQuery.noConflict(true);</script>
-</head>
-<body>
-  <div id="qunit"></div>
-  <div id="qunit-fixture">
-    <span>lame test markup</span>
-    <span>normal test markup</span>
-    <span>awesome test markup</span>
-  </div>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>Content Paginator Test Suite</title>
+		
+		<!-- Load local jQuery. This can be overridden with a ?jquery=___ param. -->
+		<script src="../libs/jquery-loader.js"></script>
+		
+		<!-- Load local QUnit. -->
+		<link rel="stylesheet" href="../libs/qunit/qunit.css" media="screen">
+		<script src="../libs/qunit/qunit.js"></script>
+		
+		<!-- Load local lib and tests. -->
+		<script src="../src/content-paginator.js"></script>
+		<script src="content-paginator-test.js"></script>
+		
+		<!-- Removing access to jQuery and $. But it'll still be available as _$, if
+		you REALLY want to mess around with jQuery in the console. REMEMBER WE
+		ARE TESTING A PLUGIN HERE, THIS HELPS ENSURE BEST PRACTICES. REALLY. -->
+		<script>
+			window._$ = jQuery.noConflict(true);
+		</script>
+	</head>
+	<body>
+		<div id="qunit"></div>
+		<div id="qunit-fixture">
+			<div id="content-paginator" style="width: 300px;">
+				<p>
+					Automated testing of software is an essential tool in development.
+				</p>
+				<p>
+					Unit tests are the basic building blocks for automated tests: each component, the unit, of software is accompanied by a test that can be run by a test runner over and over again without any human interaction. In other words, you can write a test once and run it as often as necessary without any additional cost. 
+				</p>
+				<p>
+					In addition to the benefits of good test coverage, testing can also drive the design of software, known as test-driven design, where a test is written before an implementation. You start writing a very simple test, verify that it fails (because the code to be tested doesn't exist yet), and then write the necessary implementation until the test passes. Once that happens, you extend the test to cover more of the desired functionality and implement again. By repeating those steps, the resulting code looks usually much different from what you'd get by starting with the implementation. 
+				</p>
+				<p>
+					Unit testing in JavaScript isn't much different from in other programming languages. 
+				</p>
+				<p>
+					You need a small framework that provides a test runner, as well as some utilities to write the actual tests. 
+				</p>
+			</div>
+		</div>
+	</body>
 </html>

@@ -24,7 +24,7 @@
 	$.fn.contentPaginator.defaults = {
 		
 		// container height
-		pageHeight: 200,
+		pageHeight: 300,
 		
 		// animation duration
 		duration: 800,
@@ -75,7 +75,7 @@
 			}).append(paragraphs);
 			
 			if ($element.children().length) {
-				arguments.callee.call(this, $element, options);
+				this.create($element, options);
 			} else {
 				this._init();
 			}
@@ -102,6 +102,8 @@
 			this.$pages.finish().fadeOut(duration).eq(this.pageindex).fadeIn(duration);
 			this.$pageNav.find('.content-paginator-numbers').text(numbersText);
 			
+			this.$element.data('content-paginator-pageindex', this.pageindex);
+			this.$element.data('content-paginator-pagecount', this.pagecount);
 			this._initialized = true;
 		},
 		
@@ -145,7 +147,7 @@
 		},
 		
 		_container: function() {
-			var id = 'container-paginator-' + increments++;
+			var id = 'content-paginator-' + increments++;
 			
 			return $('<div />').attr('id', id).css({
 				width: this.$element.width(),

@@ -23,5 +23,5 @@
   "dependencies": {
     "jquery": "v1.10.2"
   },
-  "keywords": []
+  "keywords": ["pagination", "paginator", "content split"]
 }
