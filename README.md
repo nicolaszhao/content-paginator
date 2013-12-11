@@ -6,6 +6,7 @@ Content Paginator is a simple jQuery plugin that allows you to page the large te
 
 ## Usage
 Include jQuery and the plugin on your page. Then select a container contains a large text content and call the contentPaginator method on DOM ready.
+
 	<script src="jquery.js"></script>
 	<script src="jquery.content-paginator.js"></script>
 	<script>
