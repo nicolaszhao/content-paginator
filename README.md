@@ -2,7 +2,7 @@
 
 Content Paginator is a simple jQuery plugin that allows you to page the large text content. Makes limited page space to increase the content of the show, and improve content readability.
 
-**Current version:** 0.2.0
+**Current version:** [0.2.0](https://github.com/nicolaszhao/content-paginator/archive/v0.2.0.zip)
 
 ## Usage
 Include jQuery and the plugin on your page. Then select a container contains a large text content and call the contentPaginator method on DOM ready.
