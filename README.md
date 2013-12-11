@@ -1,30 +1,15 @@
 # Content Paginator
 
-A jquery plugin can paginate the large content, increase the reading experience.
+Content Paginator is a simple jQuery plugin that allows you to page the large text content. Makes limited page space to increase the content of the show, and improve content readability. 
 
-## Getting Started
-Download the [production version][min] or the [development version][max].
+## Settable Options
+* pageHeight
+* duration
+* prevText
+* nextText
+* numbersText
 
-[min]: https://raw.github.com/nicolaszhao/content-paginator/master/dist/content-paginator.min.js
-[max]: https://raw.github.com/nicolaszhao/content-paginator/master/dist/content-paginator.js
-
-In your web page:
-
-```html
-<script src="jquery.js"></script>
-<script src="dist/content-paginator.min.js"></script>
-<script>
-jQuery(function($) {
-  $.awesome(); // "awesome"
-});
-</script>
-```
-
-## Documentation
-_(Coming soon)_
-
-## Examples
-_(Coming soon)_
-
-## Release History
-_(Nothing yet)_
+|| *Year* || *Temperature (low)* || *Temperature (high)* ||
+|| 1900 || -10 || 25 ||
+|| 1910 || -15 || 30 ||
+|| 1920 || -10 || 32 ||
