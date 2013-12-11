@@ -13,14 +13,22 @@
 			#footer { padding: 15px 0; }
 			#footer { color: #999; }
 			
-			#content-paginator-demo-1 { width: 200px; }
-			#content-paginator-demo-1 p { margin-bottom: 15px; }
+			#content-paginator-wrapper { width: 300px; }
+			#content-paginator-wrapper p { margin-bottom: 10px; }
+			.content-paginator-nav { position: relative; overflow: hidden; }
+			.content-paginator-button { float: left; }
+			.content-paginator-numbers { float: right; }
+			.content-paginator-button a { color: #09f; text-decoration: none; }
+			.content-paginator-button a:hover { text-decoration: underline; }
+			.content-paginator-button .content-paginator-button-disabled { color: #bbb; }
+			.content-paginator-button .content-paginator-button-disabled:hover { text-decoration: none; }
+			.content-paginator-button-prev { margin-right: 5px; }
 		</style>
 		<script src="../libs/jquery-loader.js"></script>
 		<script src="../src/jquery.content-paginator.js"></script>
 		<script>
 			$(function() {
-				$('#content-paginator-demo-1').contentPaginator();
+				$('#content-paginator-wrapper').contentPaginator();
 			});
 		</script>
 	</head>
@@ -30,7 +38,7 @@
 				<h1>jQuery Plugin - Content Paginator - Demos</h1>
 			</div>
 			<div id="content">
-				<div id="content-paginator-demo-1">
+				<div id="content-paginator-wrapper">
 					<p>
 						What is a unit anyway? In the best case.
 					</p>
