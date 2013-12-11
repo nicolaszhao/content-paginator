@@ -13,7 +13,6 @@ Include jQuery and the plugin on your page. Then select a container contains a l
 			$('#content-wrapper').contentPaginator();
 		});
 	</script>
-	
 	<div id="content-wrapper">
 		<p>
 			...
