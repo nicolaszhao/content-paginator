@@ -207,7 +207,7 @@
 			paragraphHeight = $paragraph.outerHeight(true);
 			incrementHeight = curPageHeight + paragraphHeight;
 			
-			while (maxPageHeight - incrementHeight < 0 || maxPageHeight - incrementHeight > lineHeight + 1) {
+			while (incrementHeight > maxPageHeight || maxPageHeight - incrementHeight > lineHeight + 1) {
 				middle = Math.ceil((end - start) / 2) + start;
 				$p = $('<p />').text(content.substring(0, middle)).appendTo($container);
 				
